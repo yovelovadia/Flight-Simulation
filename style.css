@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  position: relative;
+  font-size: 40px;
+  color: aliceblue;
+  background-color: rgb(64, 64, 64);
+}
+
+#input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+#input_label {
+  position: absolute;
+  background-color: rgb(236, 227, 93);
+  color: black;
+  right: 0;
+}
+
+#show_data {
+  position: absolute;
+  width: 25vw;
+  height: 50vh;
+  right: 3%;
+}
+
+#errorBox {
+  position: absolute;
+  right: 3%;
+  bottom: 10%;
+  height: 30vh;
+  width: 25vw;
+  border: 4px solid #ccc;
+  overflow: auto;
+}
+
+#mapid {
+  width: 70%;
+  height: 85vh;
+}
+
+h1 {
+  font-size: 2vh;
+  font-size: 2vw;
+}
+
+h4 {
+  font-size: 1.5vh;
+  font-size: 1.5vw;
+}
+
+#slider {
+  position: absolute;
+  bottom: 3.7%;
+  left: 3%;
+  -webkit-appearance: none;
+  width: 67%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.85;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+
+#slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+#play_button {
+  position: absolute;
+  bottom: 3%;
+  left: 5px;
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 37px;
+
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  cursor: pointer;
+
+  border-style: solid;
+  border-width: 17px 0 17px 30px;
+}
+
+#play_button.paused {
+  border-style: double;
+  border-width: 0px 0 0px 30px;
+}
+
+#play_button:hover {
+  border-color: transparent transparent transparent #404040;
+}

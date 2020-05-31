@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jordan's</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      charset="utf-8"
+      href="./node_modules/leaflet/dist/leaflet.css"
+    />
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      src="./node_modules/leaflet/dist/leaflet.js"
+    ></script>
+    <script src="./sites.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      Jordan's
+      <input id="input" type="file" />
+      <label id="input_label" for="input">choose a file...</label>
+    </header>
+    <div id="show_data"></div>
+    <div id="errors"></div>
+    <script src="./readExcel.js"></script>
+
+    <div id="mapid"></div>
+  </body>
+</html>
